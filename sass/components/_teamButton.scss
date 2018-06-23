@@ -1,21 +1,41 @@
 @import '../variables';
 
+%team-button {
+  box-shadow: $box-shadow;
+  @include default-font(15px, white);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  outline: 0;
+  border: none;
+  height: 45px;
+  line-height: 45px;
+  padding: 0 15px;
+  border-radius: 4px;
+
+  img {
+    max-width: 40px;
+    max-height: 40px;
+    padding-left: 15px;
+  }
+}
+
 .team-button-ravenclaw {
+  @extend %team-button;
   background-color: $ravenclaw;
-  @include default-font(15px);
 }
 
 .team-button-gryffindor {
+  @extend %team-button;
   background-color: $gryffindor;
-  @include default-font(15px);
 }
 
 .team-button-hufflepuff {
+  @extend %team-button;
   background-color: $hufflepuff;
-  @include default-font(15px);
 }
 
 .team-button-slytherin {
+  @extend %team-button;
   background-color: $slytherin;
-  @include default-font(15px);
 }
