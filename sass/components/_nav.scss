@@ -23,7 +23,7 @@ nav {
   }
 
   .brand-logo {
-    @include default-font(2em);
+    @include default-font(2em, white);
   }
 
   ul {
@@ -36,7 +36,7 @@ nav {
   }
 
   li {
-    @include default-font(15px);
+    @include default-font(15px, white);
   }
 
 }

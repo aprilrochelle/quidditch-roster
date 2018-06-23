@@ -1,0 +1,59 @@
+@import '../variables';
+
+%playerCard {
+  margin: 1%;
+  background-color: $gold;
+  @include default-font(15px, white);
+  width: 18%;
+  border-radius: 4px;
+  box-shadow: $box-shadow;
+
+  .img-holder {
+    position: relative;
+    height: 250px;
+    overflow: hidden;
+    width: 100%;
+  }
+
+  img {
+    display: block;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+}
+
+.player-team-ravenclaw {
+  @extend %playerCard;
+
+  .player-name {
+    @include default-font(18px, $ravenclaw);
+  }
+}
+
+.player-team-gryffindor {
+  @extend %playerCard;
+
+  .player-name {
+    @include default-font(18px, $gryffindor);
+  }
+}
+
+.player-team-hufflepuff {
+  @extend %playerCard;
+
+  .player-name {
+    @include default-font(18px, $hufflepuff);
+  }
+}
+
+.player-team-slytherin {
+  @extend %playerCard;
+
+  .player-name {
+    @include default-font(18px, $slytherin);
+  }
+}

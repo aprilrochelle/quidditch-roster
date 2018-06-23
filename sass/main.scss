@@ -2,3 +2,9 @@
 @import './components/playerList';
 @import './components/teamButtonGroup';
 @import './components/teamButton';
+@import './components/playerCard';
+@import './variables';
+
+body {
+  background-color: $darkgray;
+}
